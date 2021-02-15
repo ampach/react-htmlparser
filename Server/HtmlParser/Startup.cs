@@ -30,9 +30,7 @@ namespace HtmlParser
             services.AddSingleton<IParserService, ParserService>();
 
 
-            services.AddControllers().AddNewtonsoftJson(options =>
-                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );
+            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HtmlParser", Version = "v1" });
