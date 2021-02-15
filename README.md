@@ -1,5 +1,11 @@
 # HTML Parser
 
+The apication represents client-server solution that can be used to parse any page by URL and returns a list of all images, a total count of all words, and a count of each word within the content.
+
+The server side is built on .NET Core 3.1 and include only one API contriller with the `LoadUrl(string url)` method. The API can be tested via Swagger which is a part of solution as well.
+
+The clien side is React Single Page Application. 
+
 ## Installation 
 
 ### Pre-requisites 
