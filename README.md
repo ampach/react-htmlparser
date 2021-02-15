@@ -17,6 +17,9 @@ You’ll need the following development tools installed:
 ![Run](https://user-images.githubusercontent.com/1925984/107998940-3dd66c80-6ff7-11eb-91fb-eb2e645b9164.png)
 
 Where, https://localhost:5001 - is a server side host (Swagger is available by the link: https://localhost:5001/swagger/index.html),
+
 http://localhost:3000/ - is a client side React JS app:
 
 ![React JS App](https://user-images.githubusercontent.com/1925984/107999129-c6eda380-6ff7-11eb-95d6-7381439fda80.png)
+
+Also, React App and backend server can be run separatelly by using the following commands `yarn run start` and `yarn run start:server`correspondingly. 
