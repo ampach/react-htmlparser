@@ -31,8 +31,7 @@ function App() {
  
   const ParseURL = useCallback((url) => {
     let urlEncoded = encodeURIComponent(url)
-    console.log(urlEncoded)
-    fetch(config.serverHost + urlEncoded)
+    fetch(`${config.serverHost}?url=${urlEncoded}`)
     .then(response => response.json())
     .then(result => {
       setImages(result.imagaes)
@@ -56,8 +55,6 @@ function App() {
 
  
   const onParseClick = () => {
-    console.log(value())
-    
     if(validator.isURL(value())){
       setLoading(true)
         ParseURL(value());

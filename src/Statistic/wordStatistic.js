@@ -2,7 +2,6 @@ import React from "react";
 
  function WordStatistic (props)  
  {
-     console.log(props.occurrences)
      return (
         <div>
             <span>Total count: {props.count}</span>
